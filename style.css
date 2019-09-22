@@ -1,0 +1,1867 @@
+/*
+   Theme Name: SuperBodyCaps
+   Theme URI: http://superbodycaps.com.br
+   Author: Jackson Correa
+   Author URI: http://lableads.com.br
+   Description: Premium Landing Page Wordpress Theme
+   Tags: white, light, one-column, right-sidebar
+   Version: 1.0
+   Text Domain: SuperBodyCaps 
+*/
+
+/*
+********************************************************************************************
+| Importing fonts from google fonts
+| url: https://fonts.google.com/?query=osw&selection.family=Oswald:200,400,700
+| url: https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans:300,400,600,800
+********************************************************************************************
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
+
+/*
+********************************************************************************************
+| 1.  Code Base
+********************************************************************************************
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo span {
+    color: #50a854;
+}
+
+.phrase {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #414141;
+}
+
+.header {
+    position: relative;
+}
+
+.important {
+    position: relative;
+    z-index: 1;
+}
+
+.inner-header {
+    position: absolute;
+    background: #50a854;
+    border-top: 6px solid #f1f1f1;
+}
+
+.player {
+    background: url(player-play.png) center no-repeat;
+    background-color: transparent;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 4px 14px 0 #6f6f6f;
+    box-shadow: 0px 4px 14px 0 #6f6f6f;
+}
+
+
+.player-overlay {
+    position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+    background: url(play-button.png) center no-repeat rgba(137,137,137,0.5);
+/*    background-size: 24px;*/
+    z-index: 999;
+    
+}
+
+.subtitles {
+    position: absolute;
+    bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+.subtitles span {
+    font-weight: 300;
+}
+
+.call-to-action {
+    background: #f97923;
+    display: block;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.call-to-action span {
+    display: block;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.accept-cards span {
+    position: relative;
+    top: -10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.shield {
+    float: left;
+}
+
+.security-texts {
+    position: relative;
+}
+
+.security-texts span:first-child {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+}
+
+.security-texts span:last-child {
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    margin-top: 6px;
+}
+
+.real-people img {
+    width: 100%;
+}
+
+.real-people p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.point2 {
+    background: #f1f1f1;
+}
+
+.point2-title span {
+    font-weight: 300;
+    color: #252525;
+}
+
+.point2-text {
+    text-align: center;
+    font-size: 14px;
+}
+
+.g1 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.g2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.g3 {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.garantia-right {
+    color: #ffffff;
+    font-family: arial;
+}
+
+.point4-title {
+    font-weight: 100;
+}
+
+.point4-title span {
+    font-weight: 700;
+}
+
+.how_it_works__list {
+    
+}
+
+.how_it_works__list li {
+    border-bottom: 1px solid #d8d8d8;
+    webkit-box-shadow: 0px 4px 14px 0 #bbbbbb;
+    box-shadow: 0px 4px 14px 0 #bbbbbb;
+}
+
+.it_works_icon {
+    float: left;
+}
+
+.it_works_title {
+    float: left;
+    text-transform: uppercase;
+}
+
+.how_it_works__list p {
+    font-weight: 600;
+}
+
+.point5 {
+    background: url(bg.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.point5-title {
+    color: #fff;
+}
+
+.point5-title span {
+    font-weight: 300;
+}
+
+.depoimento img {
+    width: 100%;
+}
+
+.point6 {
+    background: url(bg2.png) center no-repeat;
+    background-size: cover;
+    width: 100%;    
+}
+
+.product {
+    position: relative;
+    text-align: center;
+}
+
+.descount {
+    position: absolute;
+    background: #50a854;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.descount h1 {
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.descount h1 > span {
+    display: block;
+}
+
+.composisao p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #515151;
+}
+
+.composisao h2 {
+    text-transform: capitalize;
+    color: #515151;
+    font-family: arial;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.point7 {
+    background: #35a278;
+}
+
+.point7-titulo {
+    color: #fff;
+}
+
+.point8 {
+    background: #fafafa;
+}
+
+.aviso-legal {
+    font-family: 'Open Sans', sans-serif;
+    color: #3f3f3f;
+}
+
+.aviso-legal h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.aviso-legal p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.primeira-compra {
+     font-family: 'Open Sans', sans-serif;
+    color: #2f2f2f;
+}
+
+.primeira-compra h1 {
+     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.primeira-compra p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.selos {
+    width: 100%;
+    min-width: 280px;
+}
+
+.rodape {
+        background: #eaeaea;
+}
+
+.logo-rodape {
+    text-transform: capitalize;
+}
+
+.links-rodape a {
+    color: #3e3e3e;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.list__videos li > a > img {
+        width: 100%;
+    }
+
+/*
+********************************************************************************************
+| 2.  Mobile
+********************************************************************************************
+*/
+
+@media only screen and (min-width:240px) and (max-width:767px)
+{
+    .container {
+        width: 280px;
+    }
+    
+    .logo {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+    
+    /*
+    ***************************************************************************************
+    | Cabeçalhos e espaçamentos entre blocos
+    ***************************************************************************************
+    */
+    .top {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point1 {
+        margin-top: 100px;
+        padding: 40px 0 40px 0;
+    }
+    
+    .point2 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point3 {
+        padding: 40px 0 40px 0;
+        background: #fdc708;
+    }
+    
+    .point4 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point5 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point6 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point7 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point8 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .m-title {
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 40px;
+    }
+    
+    .m-title_center {
+      font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 40px;  
+    }
+    
+    .phrase {
+        line-height: 26px;
+    }
+    /*
+    ***************************************************************************************
+    | Estilos do player e tambem do background
+    ***************************************************************************************
+    */
+    .inner-header {
+        height: 550px;
+        width: 100%;
+        top: 100px;
+    }
+
+    .player {
+        background-size: 24px;
+        border: 10px solid #f1f1f1;
+    }
+    
+    
+    .player-overlay {
+        background-size: 44px;
+    }
+    
+    .subtitles {
+        line-height: 24px;
+    }
+    
+    .call-to-action {
+        padding: 14px 0 14px 0;
+        font-size: 22px;
+        border: 3px solid #ffc096;
+        margin-top: 24px;
+        font-weight: 700;
+    }
+
+    .call-to-action span {
+        font-size: 11px;
+        margin-top: 6px;
+    }
+    .guarantees-left {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 18px;
+    }
+    
+    .guarantees-left a {
+        text-decoration: none;
+        color: #252525;
+    }
+    
+    .accept-cards {
+        margin-top: 6px;
+    }
+    
+    .shield {
+        padding-right: 4px;
+    }
+    
+    .security-texts {
+        top: 6px;
+    }
+    
+    .security-texts span:first-child {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .security-texts span:last-child {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 6px;
+    }
+    
+    .point1-title {
+        margin: 24px 0 34px 0;
+    }
+    
+    .real-people {
+        margin-bottom: 30px;
+    }
+    
+    .real-people p {
+        line-height: 24px;
+        margin-top: 14px;
+    }
+    
+    .point2-title {
+        margin: 24px 0 34px 0;
+    }
+    
+    .point2-text {
+        line-height: 24px;
+        font-family: arial;
+    }
+    
+    .g1 {
+        font-size: 48px;
+    }
+    
+    .g2 {
+        font-size: 54px;
+        margin: 8px 0 8px 0;
+    }
+    
+    .g3 {
+        font-size: 28px;
+    }
+    
+    .garantia-right {
+        text-align: center;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    
+    .garantia-right h1 {
+        margin-bottom: 14px;
+    }
+    
+    .point4-title {
+        margin: 24px 0 34px 0;
+    }
+    
+    .point-marki {
+    height: 40px;
+    width: 40px;
+    background: #5ea84d;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #ffffff;
+}
+    
+    .model {
+        display: none;
+    }
+    
+    .it_works_icon img {
+        width: 100px;
+    }
+    
+    .it_works_title {
+        font-size: 26px;
+        word-break: break-all;
+        width: 114px;
+        line-height: 34px;
+        margin-left: 24px;
+    }
+    
+    .how_it_works__list p {
+        text-align: left;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 24px
+    }
+    
+    .how_it_works__list li {
+        padding: 10px;
+        margin-bottom: 24px;
+    }
+    
+    .point5-title {
+        margin: 24px 0 34px 0;
+    }
+    
+    .depoimento {
+        margin-bottom: 24px;
+    }
+    
+    .descount {
+        height: 100px;
+        width: 100px;
+        right: 20px;
+        top: -20px;;
+    }
+
+    .descount h1 {
+        margin-top: 20px;
+        font-size: 28px;
+    }
+
+    .descount h1 > span {
+        line-height: 30px;
+        font-size: 18px;
+    }
+    
+    .box-product {
+        margin: 40px 0 60px 0;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    
+    .product {
+        width: 280px;
+    }
+
+    .prod-img1 {
+        width: 140px;
+    }
+    
+    .prod-img2 {
+        width: 240px;
+    }
+    
+    .prod-img3 {
+        width: 260px;
+    }
+    
+    .product-infos-title {
+        font-size: 26px;
+        text-align: center;
+        line-height: 36px;
+        color: #3b3b3b;
+        margin: 24px 0 24px 0;
+    }
+    
+    .pdt1, .pdt2, .pdt3 {
+        color: #3b3b3b;
+        margin-bottom: 16px;
+    }
+    
+    .pdt1 {
+        font-weight: 300;
+        text-transform: capitalize;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .pdt1 span {
+        font-weight: 700;
+        text-decoration: line-through;
+    }
+    
+    .pdt2 {
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .pdt2 span {
+        font-size: 22px;
+    }
+    
+    .pdt3 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 24px;
+    }
+    
+    .point7-titulo {
+        margin: 24px 0 34px 0;
+    }
+    
+    .primeira-compra {
+        margin-top: 34px;
+    }
+    
+    .aviso-legal p {
+        margin-top: 14px;
+    }
+    
+    .primeira-compra p {
+        margin-top: 14px;
+    }
+    
+    .compra-segura-selo {
+        margin: 14px 0 40px 0;;
+    }
+    
+    .selos {
+        margin-top: 14px;
+    }
+    
+    .rodape {
+        padding: 8px 0 8px 0;
+    }
+        
+    .logo-rodape {
+        font-size: 24px;
+        text-align: center;
+        margin: 10px 0 18px 0;
+    }
+    
+    .links-rodape a {
+        display: block;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+}
+
+
+
+/*
+********************************************************************************************
+| 3.  Tablets
+********************************************************************************************
+*/
+
+@media only screen and (min-width:767px) and (max-width:939px)
+{
+      .container {
+/*        min-width: 260px;*/
+          width: 480px;
+    }
+    
+    .logo {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+    
+    /*
+    ***************************************************************************************
+    | Cabeçalhos e espaçamentos entre blocos
+    ***************************************************************************************
+    */
+    .top {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point1 {
+        margin-top: 100px;
+        padding: 40px 0 40px 0;
+    }
+    
+    .point2 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point3 {
+        padding: 40px 0 40px 0;
+        background: #fdc708;
+    }
+    
+    .point4 {
+        padding: 40px 0 0px 0;
+        margin-bottom: -4px;
+    }
+    
+    .point5 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point6 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point7 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point8 {
+        padding: 40px 0 40px 0;
+    }
+    
+    .m-title {
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 40px;
+    }
+    
+    .m-title_center {
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 40px;
+    }
+    
+    .phrase {
+        line-height: 26px;
+    }
+    /*
+    ***************************************************************************************
+    | Estilos do player e tambem do background
+    ***************************************************************************************
+    */
+    .inner-header {
+        height: 600px;
+        width: 100%;
+        top: 100px;
+    }
+
+    .player {
+        width: 480px;
+        height: 300px;
+        background-size: 24px;
+        border: 10px solid #f1f1f1;
+    }
+    
+    .list__videos li {
+        display: inline-block;
+        width: 220px;
+    }
+    
+    .player-overlay {
+        background-size: 64px;
+    }
+    
+    .subtitles {
+        line-height: 24px;
+    }
+    
+    .subtitles h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    
+    .call-to-action {
+        padding: 14px 0 14px 0;
+        font-size: 34px;
+        border: 3px solid #ffc096;
+        margin-top: 24px;
+        font-weight: 700;
+    }
+
+    .call-to-action span {
+        font-size: 11px;
+        margin-top: 6px;
+    }
+    .guarantees-left {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 18px;
+    }
+    
+    .guarantees-left a {
+        text-decoration: none;
+        color: #252525;
+    }
+    
+    .guarantees-right {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .accept-cards {
+        margin-top: 6px;
+    }
+    
+    .shield {
+        padding-right: 4px;
+    }
+    
+    .security-texts {
+        top: 6px;
+    }
+    
+    .security-texts span:first-child {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .security-texts span:last-child {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 6px;
+    }
+    
+    .point1-title {
+        margin: 24px 0 34px 0;
+    }
+    
+    .real-people {
+        margin-bottom: 30px;
+    }
+    
+    .real-people p {
+        line-height: 24px;
+        margin-top: 14px;
+    }
+    
+    .point2-title {
+        margin: 24px 0 34px 0;
+    }
+    
+    .point2-text {
+        line-height: 24px;
+        font-family: arial;
+    }
+    
+    .g1 {
+        font-size: 48px;
+        text-align: center;
+    }
+    
+    .g2 {
+        font-size: 54px;
+        margin: 8px 0 8px 0;
+        text-align: center;
+    }
+    
+    .g3 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .garantia-right {
+        text-align: center;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    
+    .garantia-right h1 {
+        margin-bottom: 14px;
+    }
+    
+    .point4-title {
+        margin: 24px 0 34px 0;
+    }
+    
+    .point-marki {
+    height: 40px;
+    width: 40px;
+    background: #5ea84d;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #ffffff;
+}
+    
+    .it_works_icon img {
+        width: 100px;
+    }
+    
+    .it_works_title {
+        font-size: 26px;
+        word-break: break-all;
+        width: 114px;
+        line-height: 34px;
+        margin-left: 24px;
+    }
+    
+    .how_it_works__list p {
+        text-align: left;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 24px
+    }
+    
+    .how_it_works__list li {
+        padding: 10px;
+        margin-bottom: 24px;
+    }
+    
+    .point5-title {
+        margin: 24px 0 34px 0;
+    }
+    
+    .depoimento {
+        margin-bottom: 24px;
+    }
+    
+    .descount {
+        height: 100px;
+        width: 100px;
+        right: 20px;
+        top: -20px;;
+    }
+
+    .descount h1 {
+        margin-top: 20px;
+        font-size: 28px;
+    }
+
+    .descount h1 > span {
+        line-height: 30px;
+        font-size: 18px;
+    }
+    
+    .box-product {
+        margin: 40px 0 60px 0;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    
+    .product {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .prod-img1 {
+        width: 140px;
+    }
+    
+    .prod-img2 {
+        width: 240px;
+    }
+    
+    .prod-img3 {
+        width: 260px;
+    }
+    
+    .product-infos-title {
+        font-size: 26px;
+        text-align: center;
+        line-height: 36px;
+        color: #3b3b3b;
+        margin: 24px 0 24px 0;
+    }
+    
+    .pdt1, .pdt2, .pdt3 {
+        color: #3b3b3b;
+        margin-bottom: 16px;
+    }
+    
+    .pdt1 {
+        font-weight: 300;
+        text-transform: capitalize;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .pdt1 span {
+        font-weight: 700;
+        text-decoration: line-through;
+    }
+    
+    .pdt2 {
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .pdt2 span {
+        font-size: 22px;
+    }
+    
+    .pdt3 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 24px;
+    }
+    
+    .point7-titulo {
+        margin: 24px 0 34px 0;
+    }
+    
+    .primeira-compra {
+        margin-top: 34px;
+    }
+    
+    .aviso-legal p {
+        margin-top: 14px;
+    }
+    
+    .primeira-compra p {
+        margin-top: 14px;
+        padding-bottom: 20px;
+    }
+    
+    .compra-segura-selo {
+/*        margin: 14px 0 40px 0;;*/
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .selos {
+        margin-top: 14px;
+    }
+    
+    .rodape {
+        padding: 8px 0 8px 0;
+    }
+        
+    .logo-rodape {
+        font-size: 24px;
+        text-align: center;
+        margin: 10px 0 18px 0;
+    }
+    
+    .links-rodape a {
+        display: block;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+}
+
+
+.close__second_player {
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #ccc;
+    right: 0;
+    top: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+.close__second_player svg {
+    border: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 14px;
+}
+
+.hide_player {
+    display: none;
+}
+
+/*
+********************************************************************************************
+| 4.  Desktop
+********************************************************************************************
+*/
+
+@media (min-width:940px)
+{
+    .container {
+        width: 940px;
+    }
+    
+    .logo {
+        font-size: 30px;
+        margin-bottom: 78px;
+    }
+    
+    .lheight {
+        line-height: 80px;
+    }
+    
+    /*
+    ***************************************************************************************
+    | Cabeçalhos e espaçamentos entre blocos
+    ***************************************************************************************
+    */
+    .top {
+        padding: 40px 0 40px 0;
+    }
+    
+    .point1 {
+        padding: 140px 0 90px 0;
+    }
+    
+    .point2 {
+        padding: 110px 0 110px 0;
+    }
+    
+    .point3 {
+        padding: 110px 0 110px 0;
+        background: #fdc708;
+    }
+    
+    .point4 {
+        padding: 110px 0 0px 0;
+        margin-bottom: -4px;
+    }
+    
+    .point5 {
+        padding: 110px 0 110px 0;
+    }
+    
+    .point6 {
+        padding: 110px 0 110px 0;
+    }
+    
+    .point7 {
+        padding: 110px 0 110px 0;
+    }
+    
+    .point8 {
+        padding: 110px 0 110px 0;
+    }
+    
+    .m-title {
+        font-weight: 700;
+        font-size: 52px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+/*        line-height: 40px;*/
+    }
+    
+    .h1-desk {
+        margin-bottom: 40px;
+    }
+    
+    .m-title_center {
+        font-size: 52px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 58px;
+    }
+    
+    .phrase {
+        line-height: 26px;
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 38px;
+    }
+    
+    .phrase span {
+        font-weight: bold;
+    }
+    /*
+    ***************************************************************************************
+    | Estilos do player e tambem do background
+    ***************************************************************************************
+    */
+    .inner-header {
+        height: 650px;
+        width: 100%;
+        top: 250px;
+    }
+
+    .player {
+        width: 100%;
+        height: 500px;
+        border: 10px solid #f1f1f1;
+    }
+    
+    .second_player {
+        position: relative;
+        height: 400px;
+        width: 620px;
+/*        background: #252525;*/
+        margin: 0 auto;
+        color: #fff;
+    }
+    
+    .list__videos {
+        width: 844px;
+        margin: 0 auto;
+    }
+    
+    .list__videos li {
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .list__videos li > img {
+        width: 100%;
+    }
+    
+    .subtitles {
+        line-height: 24px;
+    }
+    
+    .subtitles {
+        bottom: 60px;
+    }
+    
+    .subtitles h1 {
+        font-size: 52px;
+        line-height: 64px;
+    }
+    
+    .expand_player {
+        position: relative;
+        width: 420px;
+        height: 300px;
+        background: red;
+    }
+    
+    .player-overlay  {
+        background-size: 74px;
+    }
+
+    .call-to-action {
+        padding: 24px 0 24px 0;
+        font-size: 44px;
+        width: 80%;
+        margin: 0 auto;
+        border: 3px solid #ffc096;
+        margin-top: 50px;
+        font-weight: 700;
+    }
+
+    .call-to-action span {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+    .guarantees-left {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+        margin-top: 24px;
+        margin-bottom: 18px;
+        float: left;
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+        left: 140px;
+        margin-top: 30px;
+    }
+    
+    .guarantees-left a {
+        text-decoration: none;
+        color: #252525;
+    }
+    
+    .guarantees-right {
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+        left: -140px;
+        float: right;
+        margin-top: 30px;
+    }
+    
+    .accept-cards {
+        margin-top: 6px;
+    }
+    
+    .shield {
+        padding-right: 4px;
+    }
+    
+    .security-texts {
+        top: 6px;
+    }
+    
+    .security-texts span:first-child {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .security-texts span:last-child {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 6px;
+    }
+    
+       .point1-title {
+        margin: 24px 0 34px 0;
+    }
+    
+    .real-people {
+        margin-bottom: 30px;
+        width: 460px;
+    }
+    
+    .real-people p {
+        line-height: 24px;
+        margin-top: 14px;
+    }
+    
+    .point2-title {
+        margin: 0px 0 84px 0;
+    }
+    
+    .point2-title span {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .point2-text {
+        line-height: 24px;
+        font-family: arial;
+        margin: 44px 0 24px 0;
+    }
+    
+    .garantia-left {
+        float: left;
+        width: 400px;
+    }
+    
+    .g1 {
+        font-size: 88px;
+        text-align: right;
+        margin-top: 18px;
+    }
+    
+    .g2 {
+        font-size: 94px;
+        margin: 8px 0 8px 0;
+        text-align: right;
+    }
+    
+    .g3 {
+        font-size: 48px;
+        text-align: right;
+    }
+    
+    .garantia-right {
+        text-align: left;
+        line-height: 24px;
+        margin-top: 20px;
+        width: 400px;
+        float: right;
+    }
+    
+    .garantia-right h1 {
+        margin-bottom: 14px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
+    .garantia-right p {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    
+    .point4-title {
+        margin: 24px 0 64px 0;
+    }
+    
+    .it_works_icon img {
+        width: 100px;
+    }
+    
+    .it_works_title {
+        font-size: 26px;
+        word-break: break-all;
+        width: 114px;
+        line-height: 34px;
+        margin-left: 24px;
+    }
+    
+    .how_it_works__list {
+/*        width: 322px;*/
+        float: left;
+        margin-top: 54px;
+    }
+    
+    .model {
+        text-align: right;
+    }
+    
+    .model img {
+/*        width: 450px;*/
+    }
+    
+    .how_it_works__list p {
+        text-align: left;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 24px
+    }
+    
+    .how_it_works__list li {
+        padding: 10px;
+        margin-bottom: 24px;
+        width: 400px;
+    }
+    
+    .point-marki {
+        height: 40px;
+        width: 40px; 
+        background: #5ea84d;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .point5-title {
+        margin: 24px 0 64px 0;
+    }
+    
+    .point6-title {
+        margin: 14px 0 64px 0;
+    }
+    
+    .depoimento {
+        margin-bottom: 24px;
+        width: 460px;
+        float: left;
+    }
+    
+    .dep {
+        float: right;
+    }
+    
+    .descount {
+        height: 150px;
+        width: 150px;
+        right: 20px;
+        top: -20px;
+        -webkit-transition: all 0.30s ease;
+        -moz-transition: all 0.20s ease;
+        -ms-transition: all 0.20s ease;
+        -o-transition: all 0.20s ease;
+        transition: all 0.20s ease;
+    }
+    
+    .box-product:hover .descount {
+        height: 170px;
+        width: 170px;
+        right: 0;
+        -webkit-transition: all 0.30s ease;
+        -moz-transition: all 0.20s ease;
+        -ms-transition: all 0.20s ease;
+        -o-transition: all 0.20s ease;
+        transition: all 0.20s ease;
+    }
+
+    .descount h1 {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .descount h1 > span {
+        line-height: 30px;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    
+    .box-product {
+        margin: 40px 0 60px 0;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e2e2e2;
+        height: 400px;
+    }
+    
+    .product {
+        width: 340px;
+        height: 320px;
+        margin: 0 auto;
+        float: left;
+        position: relative;
+        top: 24px;
+    }
+    
+    .product-infos {
+        width: 570px;
+        float: left;
+        margin-left: 30px;
+    }
+
+    .prod-img1 {
+        width: 190px;
+    }
+    
+    .prod-img2 {
+        width: 340px;
+        margin-top: 30px;
+    }
+    
+    .prod-img3 {
+        width: 360px;
+        margin-top: 80px;
+    }
+    
+    .product-infos-title {
+        font-size: 40px;
+        text-align: left;
+        line-height: 36px;
+        color: #3b3b3b;
+        margin: 24px 0 24px 0;
+    }
+    
+    .pdt1, .pdt2, .pdt3 {
+        color: #3b3b3b;
+        margin-bottom: 16px;
+    }
+    
+    .pdt1 {
+        font-weight: 300;
+        text-transform: capitalize;
+        font-size: 26px;
+        text-align: left;
+        margin-top: 36px;
+    }
+    
+    .pdt1 span {
+        font-weight: 700;
+        text-decoration: line-through;
+    }
+    
+    .pdt2 {
+        font-weight: 700;
+        font-size: 28px;
+        text-align: left;
+        margin: 30px 0 30px 0;
+    }
+    
+    .pdt2 span {
+        font-size: 22px;
+    }
+    
+    .pdt3 {
+        text-align: left;
+        font-weight: 300;
+        font-size: 24px;
+    }
+    
+    .price {
+        width: 70%;
+        padding: 14px 0 14px 0;
+        font-size: 34px;
+        margin-left: 0;
+        margin-top: 24px;
+        border-radius: 20px;
+        border: 4px solid #ffc096;
+    }
+    .point7-titulo {
+        margin: 24px 0 34px 0;
+    }
+    
+    .primeira-compra {
+        margin-top: 34px;
+    }
+    
+    .aviso-legal p {
+        margin-top: 14px;
+    }
+    
+    .primeira-compra p {
+        margin-top: 14px;
+        padding-bottom: 20px;
+    }
+    
+    .compra-segura-selo {
+/*        margin: 14px 0 40px 0;;*/
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .selos {
+        margin-top: 14px;
+    }
+    
+    .rodape {
+        padding: 8px 0 0px 0;
+    }
+        
+    .logo-rodape {
+        font-size: 24px;
+        text-align: center;
+        margin: 10px 0 18px 0;
+        float: left;
+        line-height: 60px;
+    }
+    
+    .links-rodape a {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 8px;
+        float: right;
+        line-height: 90px;
+    }
+    
+    .links-rodape a:first-child {
+        margin-left:14px;
+    }
+    
+    .al-center {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .center-selos {
+        text-align: center;
+    }
+    
+    .selos {
+        max-width: 500px;
+    }
+
+}
+
+
+/*
+********************************************************************************************
+| 5.  Helpers
+********************************************************************************************
+*/
+
+.green {
+    color: #50a854;
+}
+
+.black {
+    color: #414141;
+}
+
+.cfx {
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+.player {
+            float: none;
+            clear: both;
+/*            width: 100%;*/
+            position: relative;
+            padding-bottom: 53.25%;
+            padding-top: 0;
+            height: 0;
+    overflow: hidden;
+        }
+        .player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+.hide__button {
+              display: none;
+          }
+
+/*
+*****************************************************************************************************
+| * Accordion Styles
+*****************************************************************************************************
+*/
+
+
+.accordionItem{
+    float:left;
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    font-family:'Open-sans',Arial,sans-serif;
+}
+.accordionItemHeading{
+    cursor: pointer;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    /* background: #2980b9; */
+    border: 2px solid #ffffff;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.open .accordionItemHeading:after {
+    display: inline-block;
+    content: '';
+    background: url(caret-arrow-up.svg) center no-repeat;
+    background-size: 14px;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+.close .accordionItemHeading:after {
+    display: inline-block;
+    content: '';
+    background: url(caret-down.svg) center no-repeat;
+    background-size: 14px;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+.close .accordionItemContent{
+    height:0px;
+    transition:height 1s ease-out;
+    -webkit-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+    float:left;
+    display:block;
+}
+.open .accordionItemContent{
+        padding: 20px;
+    background-color: #35a278;
+    border: 2px solid #fff;
+    border-top: none;
+    width: 100%;
+    margin: -10px 0px 10px 0px;
+    display:block;
+    -webkit-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+    -webkit-transform-origin: top;
+	-o-transform-origin: top;
+	-ms-transform-origin: top;
+	transform-origin: top;
+    color: #ffffff;
+	-webkit-transition: -webkit-transform 0.4s ease-out;
+	-o-transition: -o-transform 0.4s ease;
+	-ms-transition: -ms-transform 0.4s ease;
+	transition: transform 0.4s ease;
+        box-sizing: border-box;
+}
+
+.open .accordionItemContent p {
+    line-height: 24px;
+}
+
+.open .accordionItemHeading{
+    margin:0px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: transparent;
+    color: #ffffff;
+}
